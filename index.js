@@ -10,7 +10,7 @@ class Formatter {
 
   static titleize(string) {
     let capExceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from']
-    let capFirstWord = str.split(' ')[0]
+    let capFirstWord = string.split(' ')[0]
 
     return str.split(' ').map(word => {
       if (capExceptions.includes(word) && word !== capFirstWord) {
