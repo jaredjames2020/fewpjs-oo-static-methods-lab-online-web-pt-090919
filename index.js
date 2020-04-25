@@ -12,7 +12,7 @@ class Formatter {
     let capExceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from']
     let capFirstWord = string.split(' ')[0]
 
-    return str.split(' ').map(word => {
+    return string.split(' ').map(word => {
       if (capExceptions.includes(word) && word !== capFirstWord) {
         return word.toLowerCase();
       } else {
